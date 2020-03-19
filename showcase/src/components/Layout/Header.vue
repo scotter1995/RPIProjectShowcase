@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <h1>RPI Project Showcase</h1>
+        <h2>RPI Project Showcase</h2>
         <div class="topnav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">Projects</router-link>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-    h1 {
+    h2 {
         background: #da1e05 
         linear-gradient(180deg,#e0402b,#da1e05) 
         repeat-x!important;
