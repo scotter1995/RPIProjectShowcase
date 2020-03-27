@@ -3,7 +3,7 @@
         <h2>RPI Project Showcase</h2>
         <div class="topnav">
             <router-link to="/">Home</router-link> |
-            <router-link to="/about">Projects</router-link>
+            <router-link to="/projects">Projects</router-link>
         </div>
     </header>
 </template>
