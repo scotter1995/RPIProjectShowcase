@@ -1,9 +1,8 @@
 <template>
-    <div class="project-item" v-bind:class="{'info':!project.active}">
+    <div class="project-item" v-bind:class="{'is-active':!project.active}">
         <h3>
-        <img v-bind:alt="project.title + ' logo'" v-bind:src="require('../../assets/' + project.title.toLowerCase() + '.png')" width = 400>
-            <input type="checkbox" v-on:change="markActive">
-            {{project.title}}
+            <img v-bind:alt="project.title + ' logo'" v-bind:src="require('../../assets/' + project.title.toLowerCase() + '_logo.png')" width = 400>
+            <input type="button" v-on:click="markActive"> {{project.title}}
         </h3>
     </div>
 </template>
@@ -29,9 +28,5 @@ export default {
 
 .is-active {
     text-decoration: line-through;
-}
-
-.info {
-    src: "../../assets/observatory.png";
 }
 </style>

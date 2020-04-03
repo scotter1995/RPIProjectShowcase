@@ -1,5 +1,5 @@
 <template>
-  <div id="projects">
+  <div class="projects">
     <h1>This is the projects page</h1>
     <ProjectPage v-bind:projects="projects"/>
   </div>
