@@ -1,19 +1,17 @@
 <template>
     <div>
         <div v-bind:key="project.id" v-for="project in projects">
-            <ProjectItem  v-bind:project="project"/>
+            <div v-if="$route.path === '/projects/' + project.title.trim().toLowerCase()">
+                <h1>This is the {{project.title}} page</h1>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-import ProjectItem from "./Layout/ProjectItem.vue";
 
 export default {
     name: "ProjectPage",
-    components: {
-        ProjectItem
-    },
     props: ["projects"]
 }
 </script>
